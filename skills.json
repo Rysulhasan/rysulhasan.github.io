@@ -1,0 +1,134 @@
+[
+  
+    {
+        "name": "Leadership",
+        "icon": "https://i.ibb.co.com/ynXYWXQF/1leadership.png"
+    },
+    
+    {
+        "name": "Team Work",
+        "icon": "https://i.ibb.co.com/8SS23zg/2teamwork.png"
+    },
+    {
+        "name": "Project Management",
+        "icon": "https://i.ibb.co.com/pBTQLbq0/3project.png"
+    },
+    {
+        "name": "ArcGIS",
+        "icon": "https://i.ibb.co.com/TMCB3Cqv/4-ArcGIS.png"
+    },
+    {
+        "name": "Google Earth Engine",
+        "icon": "https://i.ibb.co.com/WND1yD5h/5-GEE.png"
+    },
+    
+    {
+        "name": "Remote Sensing ENVI",
+        "icon": "https://i.ibb.co.com/TMdZbtC7/6-ENVI.png"
+    },
+    
+    {
+        "name": "Machine Learning",
+        "icon": "https://i.ibb.co.com/0pyDJbD5/7-ML.png"
+    },
+
+    {
+        "name": "Data Analysis",  
+        "icon": "https://i.ibb.co.com/kVLw09bX/8-SPSS.png"
+    },
+
+    {
+        "name": "Kobo Toolbox",  
+        "icon": "https://i.ibb.co.com/JN4gQvn/9-KT.png"
+    },
+
+    {
+        "name": "Python",  
+        "icon": "https://i.ibb.co.com/bM1FrVQ4/13-Python.png"
+    },
+
+    {
+        "name": "Programing C",  
+        "icon": "https://i.ibb.co.com/HTkqvDK9/14-C.png"
+    },
+
+    {
+        "name": "Java Script",  
+        "icon": "https://i.ibb.co.com/cKL6Zc4C/15-Java.png"
+    },
+
+    {
+        "name": "Github",  
+        "icon": "https://i.ibb.co.com/7xyP7zNz/10-Github.png"
+    },
+
+    {
+        "name": "Google Colab",  
+        "icon": "https://i.ibb.co.com/9mzgyYnz/11-GCL.png"
+    },
+
+    {
+        "name": "Google Suite",  
+        "icon": "https://i.ibb.co.com/TBY8L3Zr/12-GS.png"
+    },
+
+    {
+        "name": "MS Word",  
+        "icon": "https://i.ibb.co.com/60XRrTzG/16-word.png"
+    },
+
+    {
+        "name": "MS PowerPoint",  
+        "icon": "https://i.ibb.co.com/nsHvS0Vt/17-powerpoint.png"
+    },
+
+    {
+        "name": "MS Excel",  
+        "icon": "https://i.ibb.co.com/ch5sfXn7/18-xl.png"
+    },
+
+    {
+        "name": "HTML",  
+        "icon": "https://i.ibb.co.com/DPbSdMDS/19-html.png"
+    },
+
+    {
+        "name": "CSS",  
+        "icon": "https://i.ibb.co.com/yFtSyFF6/20-css.png"
+    },
+
+    {
+        "name": "WordPress",  
+        "icon": "https://i.ibb.co.com/nqfwnMVY/21-wp.png"
+    },
+
+    {
+        "name": "Photoshop",  
+        "icon": "https://i.ibb.co.com/chrDfS1w/22-photoshop.png"
+    },
+
+    {
+        "name": "Premier Pro",  
+        "icon": "https://i.ibb.co.com/HLCJqhLH/23-premierpro.png"
+    },
+
+    {
+        "name": "Sketchup 3D",  
+        "icon": "https://i.ibb.co.com/zhcVWzK8/24-sketchup.png"
+    },
+
+    {
+        "name": "Canva",  
+        "icon": "https://i.ibb.co.com/W4TrWTzC/25-canva.png"
+    },
+
+    {
+        "name": "Blogger",  
+        "icon": "https://i.ibb.co.com/9FLSMd4/26-blogger.png"
+    },
+
+    {
+        "name": "Web Host",  
+        "icon": "https://i.ibb.co.com/VYx5VnSZ/27-web.png"
+    }
+]
