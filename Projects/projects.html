@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+  <link id='favicon' rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-png">
+    <title>My Projects | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            min-height: 100vh;
+            padding-bottom: 2rem;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header Styles */
+        .projects-header {
+            text-align: center;
+            padding: 4rem 0 2rem;
+            position: relative;
+        }
+
+        .back-button {
+            position: absolute;
+            left: 0;
+            top: 4rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(-5px);
+        }
+
+        .projects-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #ff7b00, #ffaa00, #ff7b00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+
+        .projects-header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #ccc;
+        }
+
+        /* Filter Styles */
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2rem 0 3rem;
+        }
+
+        .filter-button {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .filter-button.active {
+            background: linear-gradient(45deg, #ff7b00, #ffaa00);
+            color: #000;
+            font-weight: 600;
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .project-image {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            background: linear-gradient(45deg, #2c3e50, #4a6e8d);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.1);
+        }
+
+        .placeholder-icon {
+            font-size: 4rem;
+            color: rgba(255, 255, 255, 0.2);
+        }
+
+        .project-category {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .project-desc {
+            color: #ccc;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+            line-height: 1.6;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.7rem 1.2rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .project-link:hover {
+            background: linear-gradient(45deg, #ff7b00, #ffaa00);
+            color: #000;
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        .projects-footer {
+            text-align: center;
+            margin-top: 4rem;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .project-card {
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .projects-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .projects-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 1.5rem;
+            }
+            
+            .back-button {
+                position: relative;
+                top: 0;
+                margin-bottom: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .project-links {
+                flex-direction: column;
+            }
+            
+            .filter-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .filter-button {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="projects-header">
+            <button class="back-button" onclick="goBack()">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </button>
+            <h1>My Projects</h1>
+            <p>Explore my work in GIS, research, and web development. Each project represents a unique challenge and creative solution.</p>
+        </header>
+
+        <div class="filter-container">
+            <button class="filter-button active" data-filter="all">All Projects</button>
+            <button class="filter-button" data-filter="gis">GIS</button>
+            <button class="filter-button" data-filter="research">Research</button>
+            <button class="filter-button" data-filter="web">Web Development</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+            <!-- Project 1 -->
+            <div class="project-card" data-category="gis">
+                <div class="project-image">
+                    <img src="\assets\images\projects\Belaworkwebsite.png" alt="Working Area Location Tracking">
+                    <span class="project-category">gis</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Working Area Location Tracking</h3>
+                    <p class="project-desc">A web based online mapping for tracking work station and working area through GIS. A project designed for BELA</p>
+                    <div class="project-links">
+                        <a href="https://belabangla.org/map/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-category="gis">
+                <div class="project-image">
+                    <img src="/assets/images/projects/ratargulmap.png" alt="Swamp Forest Digitization">
+                    <span class="project-category">gis</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Swamp Forest Digitization</h3>
+                    <p class="project-desc">Digitization of Ratargul swamp forest for detecting forest degradation through satalite time frame imagary and integrated forest management.</p>
+                    <div class="project-links">
+                        <a href="https://i.ibb.co.com/wZ3BZYj7/ratargulmap.png" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-category="gis">
+                <div class="project-image">
+                    <img src="/assets/images/projects/dataextraction.png" alt="Data Extraction from satallite">
+                    <span class="project-category">gis</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Data Extraction from satallite</h3>
+                    <p class="project-desc">Data extracted from multiple location points for machine learning training dataset to predict the solar energy generation potentials.</p>
+                    <div class="project-links">
+                        <a href="https://colab.research.google.com/drive/1f41BJylBJAmF8p9jTzqOnVtDyyTxvy-V?usp=sharing" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card" data-category="research">
+                <div class="project-image">
+                    <img src="/assets/images/projects/ann.gif" alt="Machine Learning (ANN)">
+                    <span class="project-category">research</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Machine Learning (ANN)</h3>
+                    <p class="project-desc">Used 5 machine learning models to train and predict solar energy generation potential throughout the country. ANN has been the best model to give acceptable output.</p>
+                    <div class="project-links">
+                        <a href="https://colab.research.google.com/drive/1VLIUBJ0xPLlRFNqAIjwX2vytWnlp7q6b?usp=sharing" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card" data-category="research">
+                <div class="project-image">
+                    <img src="/assets/images/projects/gisML.gif" alt="GIS & ML integration">
+                    <span class="project-category">research</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">GIS & ML integration</h3>
+                    <p class="project-desc">Used Machine Learning models to interpolate solar energy potential in the GIS map for visualization.</p>
+                    <div class="project-links">
+                        <a href="https://i.ibb.co.com/dJBH3KV9/7-IDW-Interpolation-of-a-RF-b-GBM-c-SVM-d-ANN-e-KNN-and-f-combined-model-predictions.jpg" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="/assets/images/projects/presentation.gif" alt="Presentation Designing for Fiverr">
+                    <span class="project-category">web</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Presentation Designing for Fiverr</h3>
+                    <p class="project-desc">I have designed multiple presentions in Fiverr with minimulist mordern pitch-deck design.</p>
+                    <div class="project-links">
+                        <a href="https://www.fiverr.com/rysulhredoy/design-business-powerpoint-templates-and-presentation" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="/assets/images/projects/portfolio.gif" alt="Personal Portfolio">
+                    <span class="project-category">web</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Personal Portfolio</h3>
+                    <p class="project-desc">I designed this portfolio completely using html, css and javascript with the help of AI inspired from GitHub.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Rysulhasan/Rysulhasan.github.io" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://github.com/Rysulhasan/Rysulhasan.github.io" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 8 -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="/assets/images/projects/blogging.png" alt="Blogspot">
+                    <span class="project-category">web</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Blogspot</h3>
+                    <p class="project-desc">Years old blogspot used to share IT sollution being an IT enthusiast.</p>
+                    <div class="project-links">
+                        <a href="https://th3ry5ul.blogspot.com/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="projects-footer">
+            <p>© 2025 My Portfolio | All projects are protected</p>
+        </footer>
+    </div>
+
+    <script>
+        // Function to go back to the main portfolio
+        function goBack() {
+            window.history.back();
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add event listeners to filter buttons
+            const filterButtons = document.querySelectorAll('.filter-button');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Filter projects
+                    const filter = this.dataset.filter;
+                    
+                    projectCards.forEach(card => {
+                        if (filter === 'all' || card.dataset.category === filter) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

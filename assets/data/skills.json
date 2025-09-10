@@ -1,0 +1,167 @@
+[
+  
+    {
+        "name": "Leadership",
+        "icon": "https://i.ibb.co.com/ynXYWXQF/1leadership.png",
+        "percentage": "70"
+    },
+    
+    {
+        "name": "Team Work",
+        "icon": "https://i.ibb.co.com/8SS23zg/2teamwork.png",
+        "percentage": "70"
+    },
+    {
+        "name": "Project Management",
+        "icon": "https://i.ibb.co.com/pBTQLbq0/3project.png",
+        "percentage": "60"
+    },
+    {
+        "name": "ArcGIS",
+        "icon": "https://i.ibb.co.com/TMCB3Cqv/4-ArcGIS.png",
+        "percentage": "80"
+    },
+    {
+        "name": "Google Earth Engine",
+        "icon": "https://i.ibb.co.com/WND1yD5h/5-GEE.png",
+        "percentage": "50"
+    },
+    
+    {
+        "name": "Remote Sensing ENVI",
+        "icon": "https://i.ibb.co.com/TMdZbtC7/6-ENVI.png",
+        "percentage": "60"
+    },
+
+    {
+        "name": "Drone Operation",
+        "icon": "https://i.ibb.co.com/vCLvb4hL/Drone.png",
+        "percentage": "80"
+    },
+    
+    {
+        "name": "Machine Learning",
+        "icon": "https://i.ibb.co.com/0pyDJbD5/7-ML.png",
+        "percentage": "50"
+    },
+
+    {
+        "name": "Data Analysis",  
+        "icon": "https://i.ibb.co.com/kVLw09bX/8-SPSS.png",
+        "percentage": "90"
+    },
+
+    {
+        "name": "Kobo Toolbox",  
+        "icon": "https://i.ibb.co.com/JN4gQvn/9-KT.png",
+        "percentage": "90"
+    },
+
+    {
+        "name": "Python",  
+        "icon": "https://i.ibb.co.com/bM1FrVQ4/13-Python.png",
+        "percentage": "70"
+    },
+
+    {
+        "name": "Programing C",  
+        "icon": "https://i.ibb.co.com/HTkqvDK9/14-C.png",
+        "percentage": "50"
+    },
+
+    {
+        "name": "Java Script",  
+        "icon": "https://i.ibb.co.com/cKL6Zc4C/15-Java.png",
+        "percentage": "70"
+    },
+
+    {
+        "name": "Github",  
+        "icon": "https://i.ibb.co.com/7xyP7zNz/10-Github.png",
+        "percentage": "90"
+    },
+
+    {
+        "name": "Google Colab",  
+        "icon": "https://i.ibb.co.com/9mzgyYnz/11-GCL.png",
+        "percentage": "80"
+    },
+
+    {
+        "name": "Google Suite",  
+        "icon": "https://i.ibb.co.com/TBY8L3Zr/12-GS.png",
+        "percentage": "100"
+    },
+
+    {
+        "name": "MS Word",  
+        "icon": "https://i.ibb.co.com/60XRrTzG/16-word.png",
+        "percentage": "100"
+    },
+
+    {
+        "name": "MS PowerPoint",  
+        "icon": "https://i.ibb.co.com/nsHvS0Vt/17-powerpoint.png",
+        "percentage": "100"
+    },
+
+    {
+        "name": "MS Excel",  
+        "icon": "https://i.ibb.co.com/ch5sfXn7/18-xl.png",
+        "percentage": "90"
+    },
+
+    {
+        "name": "HTML",  
+        "icon": "https://i.ibb.co.com/DPbSdMDS/19-html.png",
+        "percentage": "80"
+    },
+
+    {
+        "name": "CSS",  
+        "icon": "https://i.ibb.co.com/yFtSyFF6/20-css.png",
+        "percentage": "50"
+    },
+
+    {
+        "name": "WordPress",  
+        "icon": "https://i.ibb.co.com/nqfwnMVY/21-wp.png",
+        "percentage": "40"
+    },
+
+    {
+        "name": "Photoshop",  
+        "icon": "https://i.ibb.co.com/chrDfS1w/22-photoshop.png",
+        "percentage": "100"
+    },
+
+    {
+        "name": "Premier Pro",  
+        "icon": "https://i.ibb.co.com/HLCJqhLH/23-premierpro.png",
+        "percentage": "30"
+    },
+
+    {
+        "name": "Sketchup 3D",  
+        "icon": "https://i.ibb.co.com/zhcVWzK8/24-sketchup.png",
+        "percentage": "70"
+    },
+
+    {
+        "name": "Canva",  
+        "icon": "https://i.ibb.co.com/W4TrWTzC/25-canva.png",
+        "percentage": "100"
+    },
+
+    {
+        "name": "Blogger",  
+        "icon": "https://i.ibb.co.com/9FLSMd4/26-blogger.png",
+        "percentage": "60"
+    },
+
+    {
+        "name": "Web Host",  
+        "icon": "https://i.ibb.co.com/VYx5VnSZ/27-web.png",
+        "percentage": "20"
+    }
+]

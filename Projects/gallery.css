@@ -1,0 +1,129 @@
+/* Body & Heading */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #6d86bc;
+  color: #2C3E50;
+
+}
+
+header {
+  background: linear-gradient(-180deg, #55708c, #1B3A57);
+  
+  padding: .5rem .5rem;
+}
+
+header .logo {
+  position: left;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+header .logo i {
+  font-size: 2.2rem;
+}
+
+header .logo:hover {
+  color: #fc8c05;
+}
+
+header h1 {
+  color: #ff7b00;
+  font-size: 2.5rem;
+  margin: 0;
+  letter-spacing: 2px;
+    text-align: center;
+}
+
+/* Gallery Layout */
+/* Masonry Layout */
+.gallery-container {
+  column-count: 4;         /* number of columns */
+  column-gap: 10px;        /* space between columns */
+  padding: 20px;
+}
+
+@media (max-width: 992px) {
+  .gallery-container {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-container {
+    column-count: 1;
+  }
+}
+
+/* Gallery Items */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: fit-content;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover .gallery-img {
+  transform: scale(1.1);
+}
+
+/* Hover Caption */
+.gallery-caption {
+  position: absolute;
+  inset: 0;
+  background: rgba(44, 62, 80, 0.85); /* dark overlay */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+  opacity: 1;
+}
+
+.caption-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #ff7b00;
+}
+
+.caption-desc {
+  font-size: 0.95rem;
+  color: rgb(200, 220, 240);
+}
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .gallery-caption {
+    padding: 10px;
+  }
+
+  .caption-title {
+    font-size: 1rem;
+  }
+
+  .caption-desc {
+    font-size: 0.85rem;
+  }
+}

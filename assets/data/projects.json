@@ -1,0 +1,91 @@
+[
+    {
+      "name": "Working Area Location Tracking",
+      "desc": "A web based online mapping for tracking work station and working area through GIS. A project designed for BELA",
+      "image": "Belaworkwebsite.png",
+      "category": "gis",
+      "links": 
+        {
+          "github_code": "",
+          "live": "https://belabangla.org/map/"
+        }
+    },
+    {
+      "name": "Swamp Forest Digitization",
+      "desc": "Digitization of Ratargul swamp forest for detecting forest degradation through satalite time frame imagary and integrated forest management.",
+      "image": "ratargulmap.png",
+      "category": "gis",
+      "links": 
+        {
+          "github_code": "",
+          "live": "https://i.ibb.co.com/wZ3BZYj7/ratargulmap.png"
+        }
+    },
+    {
+      "name": "Data Extraction from satallite",
+      "desc": "Data extracted from multiple location points for machine learning training dataset to predict the solar energy generation potentials.",
+      "image": "dataextraction.png",
+      "category": "gis",
+      "links": 
+        {
+          "github_code": "#",
+          "live": "https://colab.research.google.com/drive/1f41BJylBJAmF8p9jTzqOnVtDyyTxvy-V?usp=sharing"
+        }
+    }, 
+    {
+      "name": "Machine Learning (ANN)",
+      "desc": "Used 5 machine learning models to train and predict solar energy generation potential throughout the country. ANN has been the best model to give acceptable output.",
+      "image": "ann.gif",
+      "category": "research",
+      "links": 
+        {
+          "github_code": "#",
+          "live": "https://colab.research.google.com/drive/1VLIUBJ0xPLlRFNqAIjwX2vytWnlp7q6b?usp=sharing"
+        }
+    }, 
+    {
+      "name": "GIS & ML integration",
+      "desc": "Used Machine Learning models to interpolate solar energy potential in the GIS map for visualization.",
+      "image": "gisML.gif",
+      "category": "research",
+      "links": 
+        {
+          "github_code": "#",
+          "live": "https://i.ibb.co.com/dJBH3KV9/7-IDW-Interpolation-of-a-RF-b-GBM-c-SVM-d-ANN-e-KNN-and-f-combined-model-predictions.jpg"
+        }
+    }, 
+    {
+      "name": "Presentation Designing for Fiverr",
+      "desc": "I have designed multiple presentions in Fiverr with minimulist mordern pitch-deck design.",
+      "image": "presentation.gif",
+      "category": "web",
+      "links": 
+        {
+          "github_code": "#",
+          "live": "https://www.fiverr.com/rysulhredoy/design-business-powerpoint-templates-and-presentation"
+        }
+    }, 
+    {
+      "name": "Personal Portfolio",
+      "desc": "I designed this portfolio completely using html, css and javascript with the help of AI inspired from GitHub.",
+      "image": "portfolio.gif",
+      "category": "web",
+      "links": 
+        {
+          "github_code": "https://github.com/Rysulhasan/Rysulhasan.github.io",
+          "live": "https://github.com/Rysulhasan/Rysulhasan.github.io"
+        }
+    }, 
+    {
+      "name": "Blogspot",
+      "desc": "Years old blogspot used to share IT sollution being an IT enthusiast.",
+      "image": "blogging.png",
+      "category": "web",
+      "links": 
+        {
+          "github_code": "",
+          "live": "https://th3ry5ul.blogspot.com/"
+        }
+    }
+    
+  ]
