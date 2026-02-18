@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #F8FAFC;
+  color: #1E293B;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Custom utilities */
+@layer utilities {
+  .sidebar-link {
+    @apply flex items-center gap-3 px-4 py-3 text-text-secondary rounded-lg transition-all duration-200 hover:bg-primary/10 hover:text-primary;
+  }
+  
+  .sidebar-link.active {
+    @apply bg-primary/10 text-primary font-medium;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:bg-primary-dark active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-primary border border-primary px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:bg-primary/5 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-danger {
+    @apply bg-red-500 text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:bg-red-600 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 p-6;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200;
+  }
+  
+  .label {
+    @apply block text-sm font-medium text-text-secondary mb-1.5;
+  }
+  
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .badge-success {
+    @apply badge bg-green-100 text-green-800;
+  }
+  
+  .badge-warning {
+    @apply badge bg-amber-100 text-amber-800;
+  }
+  
+  .badge-error {
+    @apply badge bg-red-100 text-red-800;
+  }
+  
+  .badge-info {
+    @apply badge bg-blue-100 text-blue-800;
+  }
+  
+  .badge-primary {
+    @apply badge bg-primary/10 text-primary;
+  }
+}
